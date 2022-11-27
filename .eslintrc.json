@@ -3,6 +3,7 @@
         "browser": true,
         "es2021": true
     },
+    "ignorePatterns":["webpack.config.js"],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
@@ -20,8 +21,10 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "emotion"
     ],
     "rules": {
+        "@emotion/jsx-import": "error"
     }
 }
