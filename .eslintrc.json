@@ -22,7 +22,7 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "emotion"
+        "@emotion"
     ],
     "rules": {
         "@emotion/jsx-import": "error"
