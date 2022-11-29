@@ -2,49 +2,55 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { KakaoButtonProps } from './type';
 
-const align = {
-  start: 'margin: auto',
-  center: '',
+const defaultWidth = {
+  standard: '15rem',
+  square: '3rem',
+  circle: '3rem',
 };
 
-const LoginButton = styled.button<Pick<KakaoButtonProps, 'height' | 'width' | 'border'>>`
+const defaultHeight = {
+  standard: '3rem',
+  square: '3rem',
+  circle: '3rem',
+};
+
+const LoginButton = styled.button<Pick<KakaoButtonProps, 'height' | 'width' | 'isRound' | 'shape'>>`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: ${(props) => props.width ?? '15rem'};
-  height: ${(props) => props.height ?? '3rem'};
+  width: ${(props) => props.width ?? defaultWidth[props.shape ?? 'standard']};
+  height: ${(props) => props.height ?? defaultHeight[props.shape ?? 'standard']};
   padding: 0.5rem;
-  border-radius: ${(props) => (props.border ? '0.5rem' : 'none')};
+  cursor: pointer;
+  border-radius: ${(props) => (props.isRound ?? true ? '0.5rem' : 'none')};
+  ${(props) => props.shape === 'circle' && 'border-radius: 50%;'}
   border: none;
   outline: none;
   background-color: #fee500;
-  cursor: pointer;
+  &:hover {
+    background-color: #f2da00;
+  }
 `;
 
 const Symbol = styled.div`
   margin: 0rem 0.5rem 0rem 0.5rem;
 `;
 
+const alignCss = {
+  start: 'margin: auto;',
+  center: '',
+};
+
 const LoginText = styled.span<Pick<KakaoButtonProps, 'align'>>`
-  ${(props) => align[props.align ?? 'start']};
+  ${(props) => alignCss[props.align ?? 'start']};
   font-size: 0.9375rem;
   text-align: center;
   color: #191919;
 `;
 
-const KaKaoLoginButton = ({
-  width,
-  height,
-  text = '카카오로 시작하기',
-  align,
-  onClick,
-  style,
-  border = true,
-  size,
-  variation,
-}: KakaoButtonProps) => {
+const KaKaoLoginButton = ({ width, height, children, align, onClick, style, isRound, shape }: KakaoButtonProps) => {
   return (
-    <LoginButton width={width} height={height} onClick={onClick} style={style} border={border}>
+    <LoginButton width={width} height={height} onClick={onClick} style={style} isRound={isRound} shape={shape}>
       <Symbol>
         <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -55,7 +61,9 @@ const KaKaoLoginButton = ({
           />
         </svg>
       </Symbol>
-      <LoginText align={align}>{text}</LoginText>
+      {(shape === 'standard' || shape === undefined) && (
+        <LoginText align={align}>{children ?? '카카오로 시작하기'}</LoginText>
+      )}
     </LoginButton>
   );
 };

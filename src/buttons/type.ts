@@ -1,21 +1,19 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 export interface SocialLoginButton {
   width?: string;
 
   height?: string;
 
-  text?: string | ReactNode;
-
-  size?: 'large' | 'medium' | 'small';
+  children?: string | ReactNode;
 
   onClick?: () => void;
 
   style?: object;
 
-  variation?: 'circled' | 'outlined' | 'contained';
+  shape?: 'circle' | 'standard' | 'square';
 
   align?: 'center' | 'start';
 
-  border: boolean;
+  isRound?: boolean;
 }
