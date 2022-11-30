@@ -7,10 +7,6 @@ export interface SocialLoginButton {
 
   children?: string | ReactNode;
 
-  onClick?: () => void;
-
-  style?: object;
-
   shape?: 'circle' | 'standard' | 'square';
 
   align?: 'center' | 'start';

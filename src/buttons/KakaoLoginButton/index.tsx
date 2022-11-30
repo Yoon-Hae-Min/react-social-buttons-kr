@@ -43,14 +43,14 @@ const alignCss = {
 
 const LoginText = styled.span<Pick<KakaoButtonProps, 'align'>>`
   ${(props) => alignCss[props.align ?? 'start']};
-  font-size: 0.9375rem;
+  font-size: 1rem;
   text-align: center;
   color: #191919;
 `;
 
-const KaKaoLoginButton = ({ width, height, children, align, onClick, style, isRound, shape }: KakaoButtonProps) => {
+const KaKaoLoginButton = ({ width, height, children, align, isRound, shape, ...props }: KakaoButtonProps) => {
   return (
-    <LoginButton width={width} height={height} onClick={onClick} style={style} isRound={isRound} shape={shape}>
+    <LoginButton width={width} height={height} isRound={isRound} shape={shape} {...props}>
       <Symbol>
         <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
