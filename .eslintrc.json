@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "ignorePatterns":["webpack.config.js"],
+    "ignorePatterns":["webpack.config.js","rollup.config.mjs"],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
