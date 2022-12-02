@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { KakaoButtonProps } from './types/KakaoLoginButton';
+import { KakaoButtonProps } from '../types/KakaoLoginButton';
 
 const defaultWidth = {
   standard: '15rem',
