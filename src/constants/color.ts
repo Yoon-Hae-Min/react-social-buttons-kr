@@ -4,3 +4,7 @@ export const NAVER_IDENTITY_COLOR = '#03c75a';
 export const NAVER_IDENTITY_HOVER_COLOR = '#04b553';
 export const NAVER_WHITE_BORDER_COLOR = '#DBDBDB';
 export const NAVER_WHITE_HOVER_COLOR = '#f8f8f8';
+export const FACEBOOK_IDENTITY_COLOR = '#1877F2';
+export const FACEBOOK_IDENTITY_HOVER_COLOR = '#1770E6';
+export const FACEBOOK_WHITE_HOVER_COLOR = '#f8f8f8';
+export const FACEBOOK_BLACK_HOVER_COLOR = '#1A1A1A';
