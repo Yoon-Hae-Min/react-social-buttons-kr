@@ -8,3 +8,6 @@ export const FACEBOOK_IDENTITY_COLOR = '#1877F2';
 export const FACEBOOK_IDENTITY_HOVER_COLOR = '#1770E6';
 export const FACEBOOK_WHITE_HOVER_COLOR = '#f8f8f8';
 export const FACEBOOK_BLACK_HOVER_COLOR = '#1A1A1A';
+export const APPLE_IDENTITY_COLOR = 'black';
+export const APPLE_IDENTITY_HOVER_COLOR = '#f8f8f8';
+export const APPLE_BLACK_HOVER_COLOR = '#1A1A1A';
