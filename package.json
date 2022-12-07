@@ -1,8 +1,14 @@
 {
   "name": "react-social-buttons-kr",
-  "version": "1.0.0",
-  "repository": "https://github.com/Yoon-Hae-Min/react-social-buttons-kr.git",
-  "author": "Yoon-Hae-Min <yunhatmi@naver.com>",
+  "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoon-Hae-Min/react-social-buttons-kr.git"
+  },
+  "author": {
+    "name": "Yoon-Hae-Min",
+    "email": "yunhatmi@naver.com"
+  },
   "license": "MIT",
   "private": false,
   "main": "dist/cjs/index.js",
@@ -32,6 +38,7 @@
     "@types/react": "^18.0.25",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
+    "chromatic": "^6.11.4",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -52,5 +59,11 @@
     "build-storybook": "build-storybook",
     "build": "./node_modules/.bin/tsc",
     "rollup": "yarn clean && rollup -c"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Yoon-Hae-Min/react-social-buttons-kr/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/Yoon-Hae-Min/react-social-buttons-kr#readme",
+  "_id": "react-social-buttons-kr@1.1.0"
 }
