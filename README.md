@@ -1,6 +1,6 @@
 # react-social-buttons-kr
 
-## 디자인 사이트
+## 디자인 미리보기
 
 https://6390ab1791c9ca4ba1d1b586-dnqofksbbi.chromatic.com/?path=/story/sociallogin-naverloginbutton--default
 
@@ -10,6 +10,8 @@ https://6390ab1791c9ca4ba1d1b586-dnqofksbbi.chromatic.com/?path=/story/sociallog
 - 카카오
 - 페이스북
 - 애플
+- 구글
+- 깃허브
 
 ## 로그인 버튼 디자인 가이드
 
