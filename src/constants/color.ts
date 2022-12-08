@@ -13,3 +13,5 @@ export const APPLE_IDENTITY_HOVER_COLOR = '#f8f8f8';
 export const APPLE_BLACK_HOVER_COLOR = '#1A1A1A';
 export const GOOGLE_IDENTITY_COLOR = 'white';
 export const GOOGLE_IDENTITY_HOVER_COLOR = '#f8f8f8';
+export const GITHUB_IDENTITY_COLOR = '#222A33';
+export const GITHUB_IDENTITY_HOVER_COLOR = '#333F4D';
