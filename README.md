@@ -2,7 +2,7 @@
 
 ## 디자인 미리보기
 
-https://6390ab1791c9ca4ba1d1b586-dnqofksbbi.chromatic.com/?path=/story/sociallogin-naverloginbutton--default
+https://6390ab1791c9ca4ba1d1b586-jxsenddwvb.chromatic.com/?path=/story/sociallogin-githubloginbutton--default
 
 ## 설치
 
